@@ -37,6 +37,15 @@ function drawHorizontalLine(x, y, color) {
     drawPixel(x+4, y, color);
 }
 
+function drawVerticalLine(x, y, color) {
+    drawPixel(x, y, color);
+    drawPixel(x, y+1, color);
+    drawPixel(x, y+2, color);
+    drawPixel(x, y+3, color);
+    drawPixel(x, y+4, color);
+}
+
+function drawcircle 
 clearScreen("black");
 
 // test code 
