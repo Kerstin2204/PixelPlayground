@@ -58,4 +58,6 @@ drawVerticalLine(75, 51, "purple");
 drawVerticalLine(75, 46, "purple");
 drawVerticalLine(75, 41, "purple");
 
+drawCircle (70, 30, "red")
+
 console.log("hello World");
