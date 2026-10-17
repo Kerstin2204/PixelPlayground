@@ -37,6 +37,27 @@ function drawHorizontalLine(x, y, color) {
     drawPixel(x+4, y, color);
 }
 
+function drawHorizontalLine (x, y, length, color) {
+  for(i=0; i < length; i++) {
+    drawPixel(x + i, y, color);
+  }
+}
+
+function drawVerticalLine(x, y, length, color) {
+  for(i=0;i<length; i++) {
+    drawPixel(x, y+i, color);
+  }
+}
+
+function drawRectangle(x, y, width, height) {
+  let color= "green";
+  drawHorizontalLine(x, y, width, color);
+  drawHorizontalLine(x, y+height-1, width, color);
+  drawVerticalLine(x, y, height, color);
+  drawVerticalLine(x+width-1, y, height, color);
+}
+
+
 clearScreen("black");
 
 // test code 
